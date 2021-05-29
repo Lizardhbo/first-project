@@ -101,3 +101,40 @@ p {
 img {
     width: 500px;
 }
+
+.carousel {
+    background: lightgray;
+    width: 600px;
+    height: 400px;
+    margin: 30px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.carousel .slide {
+    width: 100%;
+    height: 100%;
+    background: lightgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.carousel .slide.show {
+    display: flex;
+}
+
+
+.carousel .left {
+    position: absolute;
+    left: 20px;
+}
+
+
+.carousel .right {
+    position: absolute;
+    right: 20px;
+}
